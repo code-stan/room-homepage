@@ -1,0 +1,62 @@
+// GENERAL STYLES
+
+@import 'mixin';
+*,
+*::before,
+*::after {
+    @include transition(all, .3s);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+    position: relative;
+    font-size: 16px;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    margin-inline: auto;
+    &, button{
+        font-family: League Spartan, sans-serif
+    }
+}
+.overlay{
+    opacity: 0;
+    @include transition(all, .25s);
+}
+.overlay.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: $Black;
+    opacity: .6;
+}
+/* =========================
+      |GENERAL STYLINGS|
+========================= */
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

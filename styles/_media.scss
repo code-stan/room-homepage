@@ -1,0 +1,129 @@
+
+// MEDIA QUERY FOR TABLET SCREENS (Improvised, no ui for that 😑)
+@media (min-width: 25em) and (max-width: 58em) {
+
+    .slider-hero,
+    .section-description {
+        @include flex(column, 0);
+    }
+
+}
+
+@media (min-width: 58em) {
+    body {
+        max-width: 1440px;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    // HEADER SECTION
+    .header {
+        @include flex(row, clamp(2em, 10vw, 4em));
+        
+        &-logo {
+            order: unset;
+        }
+    }
+
+    .mobile__menu {
+        display: none;
+    }
+
+    .nav {
+        all: unset;
+        .primary-nav {
+    
+            .nav-link {
+                color: $White;
+                position: relative;
+                
+    
+                &::after{
+                    @include transition(all, .3s);
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    width: 50%;
+                    // transform-origin: right;
+                }
+                &:hover::after{
+                    transform: translateX(-50%);
+                    bottom: -.5rem;
+                    height: 2px;
+                    background-color: $White;
+
+                }
+            }
+        }
+    }
+
+
+    // HERO SECTION
+    .slider-hero {
+        @include grid(1.5fr 1fr);
+        align-items: flex-start;
+
+        &-content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            margin-inline: auto;
+            margin-block: auto;
+        }
+
+    }
+
+    .hero-content-content {
+        @include contentSpacing(1rem, 0);
+
+        .hero-content-header {
+            @include contentSpacing(1.2rem, 2rem);
+        }
+
+    }
+
+    .hero-content-btn {
+        @include contentSpacing(0, 0);
+
+    }
+
+
+    //MAIN SECTION
+    .section-description {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        align-items: stretch;
+        justify-content: center;
+
+        &-content {
+            max-width: 37.5rem;
+            @include contentSpacing(clamp(1.5rem, 5vh, 2.5rem), $pg-space);
+            margin-inline: auto;
+        }
+    }
+
+}
+
+@media (min-width: 65rem) {
+    .hero-content-content {
+        @include contentSpacing(2rem, 0);
+
+        .hero-content-header {
+            @include contentSpacing(1.2rem, 2rem);
+        }
+
+        .hero-content-btn {
+            @include contentSpacing(1rem, 0);
+
+        }
+    }
+}
+
+@media (min-width: 70rem) {
+    .slider-button {
+        right: -112.4px;
+    }
+}

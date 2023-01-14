@@ -1,0 +1,18 @@
+@mixin flex($direction, $gap){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+    gap: $gap;
+}
+@mixin grid($gtc){
+    display: grid;
+    grid-template-columns: $gtc;
+}
+@mixin contentSpacing($bottomValue, $topValue){
+    margin-bottom: $bottomValue;
+    margin-top: $topValue;
+}
+@mixin transition($style, $time){
+    transition: $style $time ease-in-out;
+}

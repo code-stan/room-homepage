@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Frontend Mentor | Room homepage</title>
+  
+</head>
+
+<body>
+  <!-- Overlay (Dark background on mobile nav toggle) -->
+  <div class="overlay"></div>
+
+  <!-- HEAD SECTION -->
+  <section class="section section__head">
+    <header class="header">
+      <div class="header-logo">
+        <img src="./images/logo.svg" alt="Room Logo">
+      </div>
+      <!-- Nav bar -->
+      <nav class="nav">
+        <!-- Close menu button -->
+        <button role="menu"
+        class="mobile__menu mobile__menu--close"
+        aria-controls="nav"
+        aria-expanded="false">
+        <img src="./images/icon-close.svg" alt="Menu">
+        </button>
+        <ul class="primary-nav nav__list">
+          <li class="nav-item">
+            <a href="" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Open menu button -->
+      <button role="menu" 
+      class="mobile__menu mobile__menu--open" 
+      aria-controls="nav" 
+      aria-expanded="false">
+        <img src="./images/icon-hamburger.svg" alt="Menu">
+      </button>
+    </header>
+
+    <!-- Hero section (slider image and its content) -->
+    <section class="slider-hero">
+      <!-- Hero image -->
+      <div class="slider-hero-image">
+        <picture>
+          <!-- DESKTOP IMAGE  -->
+          <source class="hero-image-image hero-image__desktop" media="(min-width: 23.7em)" srcset ="./images/desktop-image-hero-1.jpg">
+
+          <!-- MOBILE IMAGE -->
+          <img class="hero-image-image hero-image__mobile" src="./images/mobile-image-hero-1.jpg" alt="">
+        </picture>
+        <div class="slider-button">
+          <button class="slider__button__left | btn-bg hover--btn">
+            <img src="./images/icon-angle-left.svg" alt="previous">
+          </button>
+          <button class="slider__button__right | btn-bg hover--btn">
+            <img src="./images/icon-angle-right.svg" alt="next">
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="slider-hero-content |  section-spacing max-width">
+        <div class="hero-content-content">
+          <h1 class="hero-content-header | clr-heading">
+            Discover innovative ways to decorate
+          </h1>
+          <p class="hero-content-text | ft-sm">
+            We provide unmatched quality, comfort, and style for property owners across the country.
+            Our experts combine form and function in bringing your vision to life. Create a room in your
+            own style with our collection and make your property a reflection of you and what you love.
+          </p>
+        </div>
+        <button class="hero-content-btn">
+          <span>
+            Shop now
+            <!-- ARROW ICON -->
+            <svg class="arrow-svg" width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+              fill="#000" fill-rule="nonzero" />
+          </svg>
+          </span> 
+        
+        </button>
+      </div>
+    </section>
+  </section>
+
+  <!-- MAIN SECTION -->
+  <main class="main main__body">
+    <section class="section-description">
+      <img class="section-description-image description__img__1" src="./images/image-about-dark.jpg" alt="dark furniture">
+      <div class="section-description-content | section-spacing max-width">
+        <h1 class="description-content-header | clr-heading">
+          About our furniture
+        </h1>
+        <p class="description-content-text | ft-sm">
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+      <img class="section-description-image description__img__2" src="./images/image-about-light.jpg" alt="light furniture">
+
+    </section>
+  </main>
+
+<!-- FOOTER SECTION (Author copyright 😁 ©️CODE STAN
+                     Challenge by FrontendMentor) -->
+  <footer class="attribution">
+    Coded by <a href="https://codestan.netlify.app/">CodeStan</a>.
+    <script src="./js/app.js" type="module"></script>
+  </body>
+
+</html>
