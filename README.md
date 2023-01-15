@@ -27,11 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
-### Mobile Screenshot
+#### Mobile Screenshot
 
-![mobile-preview](./screenshot.jpg)
+![mobile-preview](./images/mobile-screenshot.png./screenshot.jpg)
 
-### Desktop Screenshot
+#### Desktop Screenshot
 
 ![desktop-preview](./screenshot.jpg)
 
@@ -53,7 +53,7 @@ Users should be able to:
 
 ### Continued development
 
-I was having difficulty adding animations to content that's been added by the json file when the slider button is clicked. I will like to research and use this in the futute. If you there is any solution to this or any great resource please reach out😉. (Thanks)
+I was having difficulty adding animations to content that's been added by the json file when the slider button is clicked. I will like to research and use this in the futute. If you there is any solution to this or any great resource please reach out 😉. (Thanks)
 
 ## Author
 
