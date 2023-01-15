@@ -29,11 +29,11 @@ Users should be able to:
 
 #### Mobile Screenshot
 
-![mobile-preview](./images/mobile-screenshot.png./screenshot.jpg)
+![mobile-preview](./screenshot/mobile-screenshot.png)
 
 #### Desktop Screenshot
 
-![desktop-preview](./screenshot.jpg)
+![desktop-preview](./screenshot/desktop-screenshot.png)
 
 ### Links
 
