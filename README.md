@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Room homepage](https://code-stan.github.io/room-homepage)
+- Live Site URL: [Room homepage](https://room-homepageproject.netlify.app/)
 
 ## My process
 
