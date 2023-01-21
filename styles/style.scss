@@ -51,7 +51,6 @@
     padding: .5rem;
 }
 .nav{
-    @include transition(transform, .25s);
     position: fixed;
     top: 0;
     left: 0;
@@ -69,16 +68,19 @@
     
 
     .primary-nav{
+        margin-left: 1rem;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        gap: clamp(1.5rem, 7vh, 2rem);
+        column-gap: clamp(1rem, 7vw, 2rem);
+        row-gap: 1rem;
 
         .nav-link{
             color: $Black;
             font-size: $ft-text;
             text-transform: lowercase;
             font-weight: 600;
-            padding: .5rem;
+            padding: .2rem .5rem;
         }
     }
 

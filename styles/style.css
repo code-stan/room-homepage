@@ -13,7 +13,7 @@
 
 body {
   position: relative;
-  font-size: 16px;
+  font-size: 1rem;
   display: flex;
   place-items: center;
   flex-direction: column;
@@ -136,7 +136,6 @@ img {
 }
 
 .nav {
-  transition: transform 0.25s ease-in-out;
   position: fixed;
   top: 0;
   left: 0;
@@ -153,16 +152,20 @@ img {
   transform: translateX(-100%);
 }
 .nav .primary-nav {
+  margin-left: 1rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: clamp(1.5rem, 7vh, 2rem);
+  -moz-column-gap: clamp(1rem, 7vw, 2rem);
+       column-gap: clamp(1rem, 7vw, 2rem);
+  row-gap: 1rem;
 }
 .nav .primary-nav .nav-link {
   color: hsl(0deg, 0%, 0%);
   font-size: 1rem;
   text-transform: lowercase;
   font-weight: 600;
-  padding: 0.5rem;
+  padding: 0.2rem 0.5rem;
 }
 .nav.active {
   opacity: 1;
